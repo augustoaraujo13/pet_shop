@@ -1,9 +1,16 @@
 package br.com.petshop.telas;
+
+import java.awt.Toolkit;
+
 public class TelaLogin extends javax.swing.JFrame {
 
     public TelaLogin() {
         initComponents();
         //[252,74,26]
+         //Adiciona um icone a tela.
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/br/com/petshop/imagens/pata.png")));
+        //  /src/br/com/petshop/imagens/pata.png
+
     }
 
     @SuppressWarnings("unchecked")
@@ -20,7 +27,7 @@ public class TelaLogin extends javax.swing.JFrame {
         LblTexto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Bem vindo a tela de login");
+        setTitle("Bem-vindo! Tela de login");
         setResizable(false);
 
         PanelFundo.setBackground(new java.awt.Color(74, 189, 172));
